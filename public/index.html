@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">Fieldwork Coffee</div>
+    <div class="nav">
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#signup">Newsletter</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <img src="hero.svg" width="220" height="220">
+    <h3>Coffee that is ready when you arrive</h3>
+    <p class="muted">Order ahead and skip the queue. Takeaway espresso for people who are late for the train.</p>
+    <a href="#menu" class="button">Click here</a>
+  </div>
+
+  <div id="menu" class="section">
+    <h2>Menu</h2>
+    <ul id="menu-list" class="menu"></ul>
+  </div>
+
+  <div id="order" class="section">
+    <h2>Your order</h2>
+    <p id="cart-empty" class="muted">Nothing yet. Add something from the menu.</p>
+    <ul id="cart-lines"></ul>
+    <p>Subtotal: <span id="subtotal">$0</span></p>
+    <p id="discount-row">10% off orders of $30 or more</p>
+    <p>Total: <strong id="total">$0</strong></p>
+  </div>
+
+  <div id="signup" class="section">
+    <h2>Get our weekly specials</h2>
+    <form id="signup-form">
+      <input type="text" id="email" placeholder="Your email">
+      <button type="submit">Sign up</button>
+      <p id="signup-message"></p>
+    </form>
+  </div>
+
+  <div class="footer muted">&copy; Fieldwork Coffee. Platform 3, Central Station. Open 7am to 4pm on weekdays.</div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

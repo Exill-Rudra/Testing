@@ -1,0 +1,14 @@
+{
+  "name": "fieldwork-coffee-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small coffee shop website. Used to practise with AI engineers: read the code, change it, prove it with tests, review the pull request.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
